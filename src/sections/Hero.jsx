@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { ArrowRight, CircleChevronDown, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 import { Button } from "../components/Button";
 import { Download } from "lucide-react";
 
@@ -54,23 +54,39 @@ export  const Hero = () => {
                     </button>
                 </div> 
                 {/*social links*/} 
-                <div>
-                    <span>Follow Me</span> 
-                    {[{icon: Github, href:"#"},
-                     {icon: Linkedin, href:"#"}, 
-                     { icon: Instagram, href:"#"},
+                <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+                    <span className="text-sm text-muted-foreground">Follow Me</span> 
+                    {[{icon: Github, href:"https://github.com/Youcef14-l"},
+                     {icon: Linkedin, href:"https://www.linkedin.com/in/youcef-larbi-778b77388/"}, 
+                     { icon: Instagram, href:"https://www.instagram.com/youcef14yo/"},
                      { icon: Twitter , href:"#" }
 
                     ].map( (social, idx)=> (
-                        <a href="">{<social.icon />}</a>
+                        <a href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all delay-200">{<social.icon className="w-5 h-5" />}</a>
                     ) )}
                 </div>
 
             </div>
 
-            {/* right column*/}
+            {/* right column*/} 
+            <div className="relative animate-fade-in animation-delay-300 animate-float">
+                {/* profile image */} 
+                <div className="relative max-w-md mx-auto"> 
+                    <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse"/>
+                    <div className="relative glass rounded-3xl p-2 glow-border">
+                        <img src="public\image.jpg" alt="youcef larbi" className="w-full aspect-4/5 object-cover rounded-2xl" /> 
+                        {/* 1st badge*/} 
+                        <div className="absolute -bottom-4 -right-4 glass rounded-2xl px-4 py-3 animate-float">
+                            <div className="flex items-center gap-3">
+                                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/> 
+                                <span className="text-sm font-medium">Available For Work</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </div> 
   </section> 
  );
 
