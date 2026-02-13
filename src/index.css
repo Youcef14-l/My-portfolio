@@ -47,7 +47,11 @@
     background-color: color-mix(in srgb, var(--color-surfac6) 80%, transparent);
     backdrop-filter: blur(24px);
     border: 1px solid color-mix(in srgb, var(--color-border) 80%, transparent);
-  } 
+  }  
+  .glow-text {
+    text-shadow: 0 0 30px 
+    color-mix(in srgb, var(--color-primary) 50%,  transparent);
+  }
 }; 
 
 @layer utilities {
@@ -65,10 +69,52 @@
     }
   }
 
+
+  @keyframes slow-drift { 
+    0%,100%{ 
+      transform: translate(0,0);
+    } 
+      25%{ 
+      transform: translate(20px,-30px);
+    }
+      50%{ 
+      transform: translate(-15px,-20px);
+    }
+      75%{ 
+      transform: translate(30px,10px);
+    }
+    
+  } 
   .animate-fade-in {
     animation: fade-in 0.4s ease-out both; 
+  }   
+  .animation-delay-100{ 
+    animation-delay: 100ms ;
+  }
+    .animation-delay-200{ 
+    animation-delay: 200ms ;
+  }
+    .animation-delay-300{ 
+    animation-delay: 300ms ;
+  }
+    .animation-delay-400{ 
+    animation-delay: 400ms ;
+  }
+    .animation-delay-500{ 
+    animation-delay: 500ms ;
+  }
+    .animation-delay-600{ 
+    animation-delay: 600ms ;
+  }
+    .animation-delay-800{ 
+    animation-delay: 800ms ;
+  } 
+  .animated-border:hover { 
+    background-color: color-mix(in srgb, #e74c3c 15%, transparent); 
+    backdrop-filter: blur(16px); 
+    box-shadow: 0 0 20px color-mix(in srgb, #e74c3c 20%, transparent); 
 
   }
-}
 
+}
 
