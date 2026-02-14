@@ -9,7 +9,9 @@ export  const Hero = () => {
 {/* green dots */} 
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(50)].map((_, i) =>(
-            <div className="absolute w-1 h-1 rounded-full opacity-60 " style={{backgroundColor: "#e74c3c",
+            <div 
+            key={i}
+            className="absolute w-1 h-1 rounded-full opacity-60 " style={{backgroundColor: "#e74c3c",
                   boxShadow: "0 0 8px #e74c3c, 0 0 16px #e74c3c",
                 left: `${Math.random()*100}%`,
                 top: `${Math.random()*100}%`, 

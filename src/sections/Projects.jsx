@@ -1,4 +1,4 @@
-import { ArrowUpRight, Github } from "lucide-react"; 
+import { ArrowUpRight, Github,ArrowUpLeft } from "lucide-react"; 
 import SpotlightCard from '@/components/SpotlightCard.jsx';
 
 const projects = [
@@ -6,33 +6,33 @@ const projects = [
     title: "Nursery App managment",
     description: "jjjjj",
     image: "public/Projects/nursery-project-1.png",
-    tags: ["React", "firebase"],
+    tags: ["React", "Firebase","HTML","CSS","JavaScript"],
     link: "#",
-    github: "#",
+    github: "https://github.com/Youcef14-l/my-nursery-app",
   },
   {
     title: "Portfolio",
     description: "jjjjj",
     image: "public/Projects/modern-portfolio.png",
-    tags: ["React", "firebase"],
+    tags: ["React","HTML","CSS","JavaScript"],
     link: "#",
-    github: "#",
+    github: "https://github.com/Youcef14-l/My-portfolio",
   },
   {
     title: "Proffesional To-Do list website",
     description: "jjjjj",
     image: "public/Projects/to-do-list.png",
-    tags: ["React", "firebase"],
+    tags: ["HTML","CSS","JavaScript"],
     link: "#",
-    github: "#",
+    github: "https://github.com/Youcef14-l/To-do-list",
   },
   {
     title: "E-commerse website",
     description: "jjjjj",
     image: "public/Projects/E-commerse-website.png",
-    tags: ["React", "firebase"],
+    tags: ["HTML","CSS","JavaScript"],
     link: "#",
-    github: "#",
+    github: "https://github.com/mekkiAek/DEV-Project",
   },
 ];
 
@@ -133,7 +133,32 @@ export const Projects = () => {
     ))}
 
   </div>
-   
+
+  <div className=" flex items-center justify-center mt-10">
+<button
+  className="
+  relative
+  bg-card/10
+  border border-primary/50
+  text-foreground
+  transition-all duration-500 ease-out
+  focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40
+  disabled:opacity-50 disabled:cursor-not-allowed
+  group px-8 py-4 text-lg font-medium rounded-full
+  hover:border-primary
+  hover:shadow-[0_0_25px_#e74c3c40]
+  hover:scale-105
+  active:scale-95
+  "
+>
+  <span className="relative z-10 flex items-center justify-center gap-2">
+    View All Projects
+    <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+  </span>
+</button>
+
+</div>  
+ 
 </div>
 
 
