@@ -4,7 +4,8 @@ import { About } from "@/sections/About";
 import { MySkills } from "@/sections/MySkills";
 import { Projects } from "@/sections/Projects";
 import { Contact } from "@/sections/Contact";  
-import ClickSpark from '@/components/ClickSpark.jsx';  
+import ClickSpark from '@/components/ClickSpark.jsx';   
+import { Footer } from "./sections/Footer";
 
 
 
@@ -25,8 +26,9 @@ function App() {
     <MySkills /> 
     <About /> 
     <Projects /> 
-    <Contact />
-  </main>
+    <Contact /> 
+  </main> 
+    <Footer></Footer>
      </ClickSpark>
 </div>
   )
