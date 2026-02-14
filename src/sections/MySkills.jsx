@@ -24,13 +24,14 @@ export const skills = [
   { icon: java, subject: "Java" },
   { icon: c, subject: "C" },
   { icon: cpp, subject: "C++" },
-];
+];  
+
 
 export  const MySkills = () => { 
  return <section>
 <div className="mt-20 px-10 animate-fade-in animation-delay-600">
   {/* Title */}
-  <p className="text-lg text-muted-foreground mb-8 text-center">
+  <p className="text-lg text-muted-foreground mb-8 text-center uppercase">
     My Skills
   </p>
 

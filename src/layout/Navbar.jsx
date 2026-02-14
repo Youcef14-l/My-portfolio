@@ -24,7 +24,9 @@ export  const Navbar = () => {
                 {navLinks.map( (link,index)=> (
                     <a href={link.href} 
                     key={index} 
-                    className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full">{link.label}</a>
+                    className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full" 
+                    
+                    >{link.label}</a>
                 ) )}
             </div>
         </div> 
@@ -52,7 +54,9 @@ export  const Navbar = () => {
             {navLinks.map( (link,index)=> (
             <a href={link.href} 
             key={index} 
-            className="text-lg text-muted-foreground hover:text-foreground py-2">{link.label}</a>
+            className="text-lg text-muted-foreground hover:text-foreground py-2" 
+            onClick={() => (setIsMobileMenuOpen(false))}
+            >{link.label}</a>
             ) )} 
             <Button size="sm">Contact me</Button>
         </div>
