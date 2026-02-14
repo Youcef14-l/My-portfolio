@@ -1,36 +1,35 @@
 import { ArrowUpRight, Github,ArrowUpLeft } from "lucide-react"; 
 import SpotlightCard from '@/components/SpotlightCard.jsx';
-
 const projects = [
   {
-    title: "Nursery App managment",
-    description: "jjjjj",
-    image: "public/Projects/nursery-project-1.png",
-    tags: ["React", "Firebase","HTML","CSS","JavaScript"],
+    title: "Nursery App management",
+    description: "A full-featured nursery management application designed to streamline daily operations, manage tasks efficiently, and organize records with a clean and user-friendly interface powered by Firebase.",
+    image: "Projects/nursery-project-1.png",
+    tags: ["React", "Firebase", "HTML", "CSS", "JavaScript"],
     link: "#",
     github: "https://github.com/Youcef14-l/my-nursery-app",
   },
   {
     title: "Portfolio",
-    description: "jjjjj",
-    image: "public/Projects/modern-portfolio.png",
-    tags: ["React","HTML","CSS","JavaScript"],
+    description: "A modern and responsive personal portfolio built to showcase my projects, skills, and experience through smooth animations, clean UI, and an elegant user experience.",
+    image: "Projects/modern-portfolio.png",
+    tags: ["React", "HTML", "CSS", "JavaScript"],
     link: "#",
     github: "https://github.com/Youcef14-l/My-portfolio",
   },
   {
-    title: "Proffesional To-Do list website",
-    description: "jjjjj",
-    image: "public/Projects/to-do-list.png",
-    tags: ["HTML","CSS","JavaScript"],
+    title: "Professional To-Do list website",
+    description: "A dynamic task management web app that helps users organize, track, and complete daily tasks efficiently with an intuitive and structured interface.",
+    image: "Projects/to-do-list.png",
+    tags: ["HTML", "CSS", "JavaScript"],
     link: "#",
     github: "https://github.com/Youcef14-l/To-do-list",
   },
   {
-    title: "E-commerse website",
-    description: "jjjjj",
-    image: "public/Projects/E-commerse-website.png",
-    tags: ["HTML","CSS","JavaScript"],
+    title: "E-commerce website",
+    description: "An  e-commerce platform featuring product listings, promotional sections, and a modern shopping interface designed to deliver a seamless browsing experience.",
+    image: "Projects/E-commerse-website.png",
+    tags: ["HTML", "CSS", "JavaScript"],
     link: "#",
     github: "https://github.com/mekkiAek/DEV-Project",
   },
@@ -77,7 +76,7 @@ export const Projects = () => {
         {/* Image Section */}
         <div className="relative w-full h-62.5 overflow-hidden">
           <img
-            src={project.image}
+            src={`${import.meta.env.BASE_URL}${project.image}`}
             alt="project-image"
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
