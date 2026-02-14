@@ -80,7 +80,7 @@ export const About = () => {
   
               <SpotlightCard
                 key={index}
-                className="custom-spotlight-card"
+                className="custom-spotlight-card p-8"
                 style={{
                   animationDelay: `${(index + 1) * 100}ms`,
                 }} 
