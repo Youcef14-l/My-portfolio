@@ -29,7 +29,7 @@ export const skills = [
 
 export  const MySkills = () => { 
  return <section >
-<div className="mt-20 px-10 animate-fade-in animation-delay-600" id="MySkills">
+<div className="mt-20 px-10 animate-fade-in animation-delay-600 mb-50" id="MySkills">
   {/* Title */}
   <p className="text-lg text-muted-foreground mb-8 text-center uppercase">
     My Skills

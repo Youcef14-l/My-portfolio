@@ -220,7 +220,7 @@ Have an idea in mind? Let’s create something powerful.
                   <a
                     key={i}
                     href={item.href}
-                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group"
+                    className="flex items-center gap-4 p-10 rounded-xl hover:bg-surface transition-colors group "
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <item.icon className="w-5 h-5 text-primary" />
@@ -236,18 +236,7 @@ Have an idea in mind? Let’s create something powerful.
               </div>
             </div>
 
-            {/* Availability Card */}
-            <div className="glass rounded-3xl p-8 border border-primary/30">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                <span className="font-medium">Currently Available</span>
-              </div>
-              <p className="text-muted-foreground text-sm">
-                I'm currently open to new opportunities and exciting projects.
-                Whether you need a full-time engineer or a freelance consultant,
-                let's talk!
-              </p>
-            </div>
+            
           </div>
         </div>
       </div>

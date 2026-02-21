@@ -1,7 +1,8 @@
 
 import { Button } from "../components/Button";
 import { Menu, X } from "lucide-react"; 
-import { useState } from "react";
+import { useState } from "react";  
+
 const navLinks = [
     { href:"#about" , label:"About"},
     { href:"#MySkills" , label:"Skills"},
@@ -10,7 +11,7 @@ const navLinks = [
 ]; 
 
 
-export  const Navbar = () => {  
+export  const Navbar = () => {   
     const [isMobileMenuOpen,setIsMobileMenuOpen] = useState(false);
  return <header className="fixed top-0 left-0 right-0 transition-all duration-500 bg-transparent py-1.5 z-50 glass animate-header">
     <nav className="container mx-auto px-6 flex items-center justify-between">
@@ -24,19 +25,15 @@ export  const Navbar = () => {
                 {navLinks.map( (link,index)=> (
                     <a href={link.href} 
                     key={index} 
-                    className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full" 
+                    className="px-4 py-2 text-sm text-muted-foreground hover:text-primary/90 rounded-full" 
                     
                     >{link.label}</a>
                 ) )}
             </div>
         </div> 
 
-        {/* button */} 
-        <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
 
 
-        </div> 
 
         {/*mobile menu button */} 
         <button
@@ -58,7 +55,6 @@ export  const Navbar = () => {
             onClick={() => (setIsMobileMenuOpen(false))}
             >{link.label}</a>
             ) )} 
-            <Button size="sm">Contact me</Button>
         </div>
     </div> )}
  </header>
